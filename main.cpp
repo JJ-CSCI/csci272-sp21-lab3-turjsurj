@@ -7,6 +7,50 @@
 // Put the assignment code here
 
 class Quaternion {
+  public:
+    double x, y, z, a;
+    Quaternion (double x, y, z, a)
+    {
+      x = p;
+      y = q;
+      z = r;
+      a = s;
+    }
+    bool operator == (const Quaternion p)
+    {
+      if ((p->x==this->x) && p->y==this->y) && p->z==this->z) && p->a==this->a))
+        return true;
+      else
+        return false;
+    }
+    Quaternion operator+(const Quaternion p)
+    {
+      Quaternion r;
+      r.x = p.x + this-> x;
+      r.y = p.y + this-> y;
+      r.z = p.z + this-> z;
+      r.a = p.a + this-> a;
+      return r;
+    }
+    Quaternion operator - (const Quaternion p)
+    {
+      Quaternion r;
+      r.x = p.x - this-> x;
+      r.y = p.y - this-> y;
+      r.z = p.c - this-> z;
+      r.a = p.a - this-> a;
+      return r;
+    }
+    Quaternion operator * (double s)
+    {
+      Quaternion p;
+      p.x = s* this-> x;
+      p.y = s* this-> y;
+      p.z = s* this-> z;
+      p.a = s* this-> a;
+      return p;
+    }
+    
 };
 
 //------------------------------
